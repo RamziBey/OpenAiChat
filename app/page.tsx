@@ -82,7 +82,7 @@ export default function Home() {
           submitData(e)
         }}>
           <div>
-            <input type="text" className="w-full text-slate-900 bg-slate-100 p-2" name="user input" id="user-input" placeholder="Type your text here" />
+            <input type="text" className="w-full text-slate-900 bg-slate-100 p-2" name="user input" id="user-input" placeholder="Type your text here" autoComplete="off"/>
             <div className="grid grid-cols-2 gap-2 mt-2">
               { openAiLoading && <button className='w-full bg-emerald-800 rounded-sm'><ChatTypingAnimation /></button>}
               { !openAiLoading && <button className="w-full bg-emerald-800 rounded-sm">Send</button>}
